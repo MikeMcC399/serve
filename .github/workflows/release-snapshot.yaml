@@ -37,8 +37,8 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN_ELEVATED }}
       - name: Compile
         run: pnpm compile
-      - name: Publish Snapshot Release
-        run: pnpm changeset publish --no-git-tag --tag snapshot
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN_ELEVATED }}
+      # - name: Publish Snapshot Release
+      #   run: pnpm changeset publish --no-git-tag --tag snapshot
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #     NPM_TOKEN: ${{ secrets.NPM_TOKEN_ELEVATED }}
